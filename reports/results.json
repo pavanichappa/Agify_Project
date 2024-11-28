@@ -1,0 +1,63 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "agify-api-testing;stress-testing",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Stress Testing",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 51,
+            "name": "I send 10000 requests to the Agify API in 10 seconds",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16381439400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "the response status code should be 429",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 592799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "the response should contain \"Request limit reached\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:126"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 730299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "agify-api-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Agify API Testing",
+    "tags": [],
+    "uri": "src\\test\\features\\api.feature"
+  }
+]
