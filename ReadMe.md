@@ -8,6 +8,7 @@ This project contains automated tests for the Agify API using Cucumber, Playwrig
 - [Installation](#installation)
 - [Running Tests](#running-tests)
 - [Generating Reports](#generating-reports)
+- [GitHub Actions Workflow](#github-actions-workflow)
 - [Project Structure](#project-structure)
 
 
@@ -72,6 +73,13 @@ npm run test-and-report
 
 This command will run the tests and generate an HTML report in the `reports` directory.
 This command uses concurrently to run the tests and generate the report at the same time.
+
+## GitHub Actions Workflow
+
+This project includes a GitHub Actions workflow to automate the testing and reporting process. The workflow is defined in the `.github/workflows/ci.yml` file.
+
+You can view the workflow file [here](.github/workflows/ci.yml).
+
 
 ## Project Structure
 
