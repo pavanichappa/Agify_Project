@@ -38,3 +38,6 @@ jobs:
         with:
           name: test-report
           path: reports/results.html
+
+      - name: Test Execution Status
+        run: echo "Test Execution Completed"
