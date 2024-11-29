@@ -1,6 +1,7 @@
 name: CI
 
 on:
+  
   push:
     branches:
       - main
@@ -28,9 +29,11 @@ jobs:
         run: npm run test
 
       - name: Generate report
+        if: always()
         run: npm run generate-report
 
       - name: Upload report
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: test-report
