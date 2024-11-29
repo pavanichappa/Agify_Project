@@ -4,6 +4,698 @@
     "elements": [
       {
         "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---positive-scenarios",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Get age for the name - positive Scenarios",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I send a GET request to agify API for name \"alice\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 425949100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47266300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the age should be \"56\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4559000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---positive-scenarios",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Get age for the name - positive Scenarios",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I send a GET request to agify API for name \"BOB\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106434099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 265400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4300799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the age should be \"70\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4315799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---positive-scenarios",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Get age for the name - positive Scenarios",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I send a GET request to agify API for name \"Jonh Doe  Alexander\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117041400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 364500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4321100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the age should be \"55\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6324100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---positive-scenarios",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Get age for the name - positive Scenarios",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I send a GET request to agify API for name \"g\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90845600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3698599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the age should be \"64\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2891899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---negative-scenarios",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Get age for the name - negative Scenarios",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I send a GET request to agify API for name \"13243245\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100087199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3997800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the age should be \"null\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3391000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---negative-scenarios",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Get age for the name - negative Scenarios",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I send a GET request to agify API for name \"\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88633299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2508600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the age should be \"null\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1690200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---negative-scenarios",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Get age for the name - negative Scenarios",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I send a GET request to agify API for name \"frankjhgjgjhkjguyhfygfdgfchfuygjbvjhfthfgchgvhjyujgkjgfuthfhg\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182517000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2534900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the age should be \"null\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2686500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---negative-scenarios",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Get age for the name - negative Scenarios",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I send a GET request to agify API for name \"@!$%^\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93918800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4280200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the age should be \"null\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2515800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;missing-name-parameter",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Missing Name Parameter",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I send a GET request to agify API with no name parameter",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87043300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "the response status is 422",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 150699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "the response should contain the field \"error\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3431599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;response-time-for-single-request-performance-testing",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Response Time for Single Request-Performance Testing",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "I send a GET request to agify API for name \"alice\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104962000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "the response time should be less than 1000 milliseconds",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;response-time-for-multiple-requests",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Response Time for Multiple Requests",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 40,
+            "name": "I make 500 requests to the Agify API with various names",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45918737900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "the average response time should be less than 300ms",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2084299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;load-testing-with-bulk-requests",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "Load Testing with Bulk Requests",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "I make 500 requests concurrently to the Agify API",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2161092400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "the system should handle all requests without crashing or significant delay",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 800900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "the response status code for all requests should be 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:94"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3581999,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:96:12)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
         "id": "agify-api-testing;stress-testing",
         "keyword": "Scenario",
         "line": 49,
@@ -19,7 +711,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16381439400
+              "duration": 15880028599
             }
           },
           {
@@ -32,7 +724,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 592799
+              "duration": 714800
             }
           },
           {
@@ -44,8 +736,9 @@
               "location": "src\\test\\steps\\api.ts:126"
             },
             "result": {
-              "status": "passed",
-              "duration": 730299
+              "status": "failed",
+              "duration": 5010370399,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\pavan\\Agify_Project\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"
             }
           }
         ],

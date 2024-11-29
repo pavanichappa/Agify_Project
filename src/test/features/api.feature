@@ -1,56 +1,56 @@
  Feature: Agify API Testing
 
-#   Scenario Outline: Get age for the name - positive Scenarios
-#     Given I send a GET request to agify API for name "<Name>"
-#     When the response status is 200
-#     Then the response should contain the field "age"
-#     And the age should be "<Age>"
+  Scenario Outline: Get age for the name - positive Scenarios
+    Given I send a GET request to agify API for name "<Name>"
+    When the response status is 200
+    Then the response should contain the field "age"
+    And the age should be "<Age>"
 
-#     Examples:
-#       | Name                | Age |
-#       | alice               |  56 |
-#       | BOB                 |  70 |
-#       | Jonh Doe  Alexander |  55 |
-#       | g                   |  64 |
+    Examples:
+      | Name                | Age |
+      | alice               |  56 |
+      | BOB                 |  70 |
+      | Jonh Doe  Alexander |  55 |
+      | g                   |  64 |
 
-#   Scenario Outline: Get age for the name - negative Scenarios
-#     Given I send a GET request to agify API for name "<Name>"
-#     When the response status is 200
-#     Then the response should contain the field "age"
-#     And the age should be "<Age>"
+  Scenario Outline: Get age for the name - negative Scenarios
+    Given I send a GET request to agify API for name "<Name>"
+    When the response status is 200
+    Then the response should contain the field "age"
+    And the age should be "<Age>"
 
-#     Examples:
-#       | Name                                                          | Age  |
-#       |                                                      13243245 | null |
-#       |                                                               | null |
-#       | frankjhgjgjhkjguyhfygfdgfchfuygjbvjhfthfgchgvhjyujgkjgfuthfhg | null |
-#       | @!$%^                                                         | null |
+    Examples:
+      | Name                                                          | Age  |
+      |                                                      13243245 | null |
+      |                                                               | null |
+      | frankjhgjgjhkjguyhfygfdgfchfuygjbvjhfthfgchgvhjyujgkjgfuthfhg | null |
+      | @!$%^                                                         | null |
 
-#   Scenario: Missing Name Parameter
-#     Given I send a GET request to agify API with no name parameter
-#     When the response status is 422
-#     Then the response should contain the field "error"
+  Scenario: Missing Name Parameter
+    Given I send a GET request to agify API with no name parameter
+    When the response status is 422
+    Then the response should contain the field "error"
 
-  # Scenario: Response Time for Single Request-Performance Testing
-  #   Given I send a GET request to agify API for name "alice"
-  #   When the response status is 200
-  #   Then the response time should be less than 1000 milliseconds
+  Scenario: Response Time for Single Request-Performance Testing
+    Given I send a GET request to agify API for name "alice"
+    When the response status is 200
+    Then the response time should be less than 1000 milliseconds
 
-  # Scenario: Response Time for Multiple Requests
-  #   Given I make 500 requests to the Agify API with various names
-  #   Then the average response time should be less than 300ms
+  Scenario: Response Time for Multiple Requests
+    Given I make 500 requests to the Agify API with various names
+    Then the average response time should be less than 300ms
 
-  # Scenario: Load Testing with Bulk Requests
-  # # this test fails because the API is rate-limited. It will return 429 status code
-  #   Given I make 500 requests concurrently to the Agify API
-  #   Then the system should handle all requests without crashing or significant delay
-  #   And the response status code for all requests should be 200
+  Scenario: Load Testing with Bulk Requests
+  # this test fails because the API is rate-limited. It will return 429 status code
+    Given I make 500 requests concurrently to the Agify API
+    Then the system should handle all requests without crashing or significant delay
+    And the response status code for all requests should be 200
 
-  # Scenario: Stress Testing
-  # #Sending 10000 requests in a short time period should result in a rate-limit error or controlled failure
-  #   Given I send 10000 requests to the Agify API in 10 seconds
-  #   Then the response status code should be 429
-  #   And the response should contain "Request limit reached"
+  Scenario: Stress Testing
+  #Sending 10000 requests in a short time period should result in a rate-limit error or controlled failure
+    Given I send 10000 requests to the Agify API in 10 seconds
+    Then the response status code should be 429
+    And the response should contain "Request limit reached"
 ############################   TODO   ###########################################
     # Scenario:Security Test - SQL Injection
     # Given I make a request to the Agify API with the name parameter containing a SQL injection payload "' OR 1=1 --"

@@ -61,7 +61,6 @@ Given('I make 500 requests to the Agify API with various names', { timeout: 6000
 Then('the average response time should be less than {int}ms', function (maxAverageResponseTime: number) {
   const totalResponseTime = responseTimes.reduce((accumulatedValue, currentResponsetime) => accumulatedValue + currentResponsetime, 0);
   const averageResponseTime = totalResponseTime / responseTimes.length;
-  console.log(`Average Response Time: ${averageResponseTime}ms`);
   assert.ok(averageResponseTime < maxAverageResponseTime, `Expected average response time to be less than ${maxAverageResponseTime}ms, but got ${averageResponseTime}ms`);
 });
 
@@ -126,10 +125,12 @@ Then('the response status code should be {int}', (expectedStatuscode: number) =>
 Then('the response should contain {string}', async function (ExpectedErrorMessage:string) {
   for (const response of responses) {
     const responseBody = await response.json();
-    console.log('Response Body:', responseBody); // Log the response body for debugging
+    assert.strictEqual(responseBody.error, ExpectedErrorMessage);
     assert.strictEqual(responseBody.error, ExpectedErrorMessage);
   
-  }
+        assert.strictEqual(responseBody.error, ExpectedErrorMessage);
+  
+    }
 });
 
 Given('I make a request to the Agify API with the name parameter containing a SQL injection payload {string}', async (sqlInjectionString: string) => {
@@ -140,8 +141,7 @@ Given('I make a request to the Agify API with the name parameter containing a SQ
 
 Then('the response body should not expose any database error message', async () => {
   const responseBody = await response.json();
-  console.log('Response Body:', responseBody); // Log the response body for debugging
-  assert.ok(!responseBody.hasOwnProperty('error'), 'Expected no database error message in response');
+   assert.ok(!responseBody.hasOwnProperty('error'), 'Expected no database error message in response');
 })
 
 
