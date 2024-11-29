@@ -42,7 +42,7 @@ To install the project, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/Agify_Project.git
+   git clone https://github.com/pavanichappa/Agify_Project.git
    cd Agify_Project
    ```
 
