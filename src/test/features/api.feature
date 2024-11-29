@@ -31,26 +31,26 @@
     When the response status is 422
     Then the response should contain the field "error"
 
-  # Scenario: Response Time for Single Request-Performance Testing
-  #   Given I send a GET request to agify API for name "alice"
-  #   When the response status is 200
-  #   Then the response time should be less than 1000 milliseconds
+  Scenario: Performance Test-Response Time for Single Request
+    Given I send a GET request to agify API for name "alice"
+    When the response status is 200
+    Then the response time should be less than 1000 milliseconds
 
-  # Scenario: Response Time for Multiple Requests
-  #   Given I make 500 requests to the Agify API with various names
-  #   Then the average response time should be less than 300ms
+  Scenario: Performance Test-Response Time for Multiple Requests
+    Given I make 500 requests to the Agify API with various names
+    Then the average response time should be less than 300ms
 
-  # Scenario: Load Testing with Bulk Requests
-  # # this test fails because the API is rate-limited. It will return 429 status code
-  #   Given I make 500 requests concurrently to the Agify API
-  #   Then the system should handle all requests without crashing or significant delay
-  #   And the response status code for all requests should be 200
+  Scenario: Load Testing with Bulk Requests
+  # this test fails because the API is rate-limited. It will return 429 status code
+    Given I make 500 requests concurrently to the Agify API
+    Then the system should handle all requests without crashing or significant delay
+    And the response status code for all requests should be 200
 
-  # Scenario: Stress Testing
-  # #Sending 10000 requests in a short time period should result in a rate-limit error or controlled failure
-  #   Given I send 10000 requests to the Agify API in 10 seconds
-  #   Then the response status code should be 429
-  #   And the response should contain "Request limit reached"
+  Scenario: Stress Testing
+  #Sending 10000 requests in a short time period should result in a rate-limit error or controlled failure
+    Given I send 10000 requests to the Agify API in 10 seconds
+    Then the response status code should be 429
+    And the response should contain "Request limit reached"
     
   Scenario:Security Test - SQL Injection
     Given I make a request to the Agify API with the name parameter containing "' OR 1=1 --"
