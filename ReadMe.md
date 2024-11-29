@@ -90,7 +90,7 @@ The project directory structure is as follows:
 ├── cucumber.js
 ├── generateReport.js
 ├── package.json
-├──tsconfig.json
+├── tsconfig.json
 └── README.md
 
 
