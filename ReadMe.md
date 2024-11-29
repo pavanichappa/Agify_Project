@@ -127,4 +127,6 @@ The project directory structure is as follows:
 - **Installation**: Provides instructions for cloning the repository and installing dependencies.
 - **Running Tests**: Explains how to run the tests.
 - **Generating Reports**: Explains how to generate HTML reports.
+- **Concurrently**: This project uses the `concurrently` package to run multiple commands simultaneously. It is particularly useful for running tests and generating reports at the same time, improving efficiency and saving time.
+- **GitHub Actions Workflow**:This project leverages GitHub Actions to automate the testing and reporting process. The workflow is triggered on every push and pull request, ensuring that the codebase remains stable and any issues are promptly identified. The workflow includes steps for setting up the environment, installing dependencies, running tests, and generating reports, providing a seamless CI/CD pipeline.
 - **Project Structure**: Describes the directory structure of the project.
