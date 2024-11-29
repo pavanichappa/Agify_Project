@@ -78,7 +78,10 @@ This command uses concurrently to run the tests and generate the report at the s
 The project directory structure is as follows:
 
 ```
-.
+..
+├── .github
+│   └── workflows
+│       └── ci.yml
 ├── src
 │   ├── test
 │   │   ├── features
