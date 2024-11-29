@@ -8,6 +8,7 @@ This project contains automated tests for the Agify API using Cucumber, Playwrig
 - [Installation](#installation)
 - [Running Tests](#running-tests)
 - [Generating Reports](#generating-reports)
+- [Running Tests and Generating Reports Concurrently](#running-tests-and-generating-reports-concurrently)
 - [GitHub Actions Workflow](#github-actions-workflow)
 - [Project Structure](#project-structure)
 
@@ -68,11 +69,26 @@ This command will execute all the Cucumber tests defined in the `features` direc
 To generate an HTML report after running the tests, use the following command:
 
 ```sh
-npm run test-and-report
+npm run generate-report
 ```
 
 This command will run the tests and generate an HTML report in the `reports` directory.
-This command uses concurrently to run the tests and generate the report at the same time.
+
+## Running Tests and Generating Reports Concurrently
+
+To run the tests and generate the report concurrently, use the following command:
+
+```sh
+npm run test-and-report
+```
+
+This command uses `concurrently` to run the tests and generate the report at the same time.
+To run the tests and generate the report concurrently, use the following command:
+
+```sh
+npm run test-and-report
+```
+This command uses `concurrently` to run the tests and generate the report at the same time.
 
 ## GitHub Actions Workflow
 
