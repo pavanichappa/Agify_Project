@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 417031500
+              "duration": 454884199
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 6706899,
+              "duration": 29848299,
               "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
@@ -83,7 +83,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 85845900
+              "duration": 96534599
             }
           },
           {
@@ -96,7 +96,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1189699,
+              "duration": 2065999,
               "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
@@ -147,7 +147,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 87241099
+              "duration": 103935599
             }
           },
           {
@@ -160,7 +160,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1355199,
+              "duration": 2043400,
               "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
@@ -211,7 +211,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 88048899
+              "duration": 89588299
             }
           },
           {
@@ -224,7 +224,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1076900,
+              "duration": 953599,
               "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
@@ -275,7 +275,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 85929500
+              "duration": 87371699
             }
           },
           {
@@ -288,7 +288,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1570200,
+              "duration": 2631199,
               "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
@@ -339,7 +339,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 89924399
+              "duration": 92144800
             }
           },
           {
@@ -352,7 +352,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1094399,
+              "duration": 1977399,
               "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
@@ -403,7 +403,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 87940400
+              "duration": 89375500
             }
           },
           {
@@ -416,7 +416,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1049799,
+              "duration": 1696300,
               "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
@@ -467,7 +467,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 85036000
+              "duration": 91935400
             }
           },
           {
@@ -480,7 +480,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 502300,
+              "duration": 1344799,
               "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
@@ -531,7 +531,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 86418400
+              "duration": 89689999
             }
           },
           {
@@ -544,7 +544,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 83800
+              "duration": 240499
             }
           },
           {
@@ -557,7 +557,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7676999
+              "duration": 20067000
             }
           }
         ],
@@ -566,48 +566,133 @@
       },
       {
         "description": "",
-        "id": "agify-api-testing;response-time-for-single-request-performance-testing",
+        "id": "agify-api-testing;security-test---sql-injection",
         "keyword": "Scenario",
-        "line": 34,
-        "name": "Response Time for Single Request-Performance Testing",
+        "line": 55,
+        "name": "Security Test - SQL Injection",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 35,
-            "name": "I send a GET request to agify API for name \"alice\"",
+            "line": 56,
+            "name": "I make a request to the Agify API with the name parameter containing \"' OR 1=1 --\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:15"
+              "location": "src\\test\\steps\\api.ts:136"
             },
             "result": {
               "status": "passed",
-              "duration": 86720899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 36,
-            "name": "the response status is 200",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:23"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 1034099,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
+              "duration": 91327999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 37,
-            "name": "the response time should be less than 1000 milliseconds",
+            "line": 57,
+            "name": "the response status code should be 400",
             "match": {
-              "location": "src\\test\\steps\\api.ts:43"
+              "location": "src\\test\\steps\\api.ts:119"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
+              "duration": 462300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "the response body should not expose any database error message",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:142"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3500500,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected no database error message in response\n    + expected - actual\n\n    -false\n    +true\n\n    at C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:144:10\n    at fulfilled (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:38:58)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;security-test---cross-site-scripting-(xss)",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "Security Test - Cross-Site Scripting (XSS)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 62,
+            "name": "I make a request to the Agify API with the name parameter containing \"<script>alert('XSS')</script>\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87829300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:119"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "the response body should not contain the injected script",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:148"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4170000,
+              "error_message": "TypeError: responseBody.includes is not a function\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:151:27)\n    at fulfilled (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:38:58)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;security-test---sensitive-data-exposure",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "Security Test - Sensitive Data Exposure",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 68,
+            "name": "I send a GET request to agify API for name \"John\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85651399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "the response body should not contain any sensitive or personal data (e.g., email, IP address, etc.)",
+            "result": {
+              "status": "undefined",
               "duration": 0
             }
           }
@@ -617,137 +702,49 @@
       },
       {
         "description": "",
-        "id": "agify-api-testing;response-time-for-multiple-requests",
+        "id": "agify-api-testing;security-test---authentication-and-authorization",
         "keyword": "Scenario",
-        "line": 39,
-        "name": "Response Time for Multiple Requests",
+        "line": 71,
+        "name": "Security Test - Authentication and Authorization",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 40,
-            "name": "I make 500 requests to the Agify API with various names",
+            "line": 73,
+            "name": "I make a request to the Agify API without a valid API key",
             "match": {
-              "location": "src\\test\\steps\\api.ts:47"
+              "location": "src\\test\\steps\\api.ts:160"
             },
             "result": {
               "status": "passed",
-              "duration": 43959900699
+              "duration": 87462400
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
-            "name": "the average response time should be less than 300ms",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 631599
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "agify-api-testing;load-testing-with-bulk-requests",
-        "keyword": "Scenario",
-        "line": 43,
-        "name": "Load Testing with Bulk Requests",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 45,
-            "name": "I make 500 requests concurrently to the Agify API",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:67"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2624236299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 46,
-            "name": "the system should handle all requests without crashing or significant delay",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:86"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2543100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "the response status code for all requests should be 200",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:93"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 1951600,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:95:12)"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "agify-api-testing;stress-testing",
-        "keyword": "Scenario",
-        "line": 49,
-        "name": "Stress Testing",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 51,
-            "name": "I send 10000 requests to the Agify API in 10 seconds",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:99"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20800438599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 52,
-            "name": "the response status code should be 429",
+            "line": 74,
+            "name": "the response status code should be 401",
             "match": {
               "location": "src\\test\\steps\\api.ts:119"
             },
             "result": {
               "status": "passed",
-              "duration": 1009900
+              "duration": 181700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 53,
-            "name": "the response should contain \"Request limit reached\"",
+            "line": 75,
+            "name": "the response body should contain a message indicating that authentication is required",
             "match": {
-              "location": "src\\test\\steps\\api.ts:125"
+              "location": "src\\test\\steps\\api.ts:170"
             },
             "result": {
               "status": "failed",
-              "duration": 5040838600,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\pavan\\Agify_Project\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"
+              "duration": 6485200,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected authentication required message not found in response\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:173:10)\n    at fulfilled (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:38:58)"
             }
           }
         ],

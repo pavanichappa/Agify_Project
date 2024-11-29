@@ -22,6 +22,7 @@ Before you begin, ensure you have met the following requirements:
   - `@cucumber/cucumber` (version 11.1.0)
   - `typescript` (version 5.7.2)
   - `cucumber-html-reporter` (version 6.0.0)
+  - `concurrently` (version 7.6.0)
 
 
 You can install these packages globally using the following commands:
@@ -31,6 +32,7 @@ npm install -g @playwright/test@1.49.0
 npm install -g @cucumber/cucumber@11.1.0
 npm install -g typescript@5.7.2
 npm install -g cucumber-html-reporter@6.0.0
+npm install -g concurrently@7.6.0
 ```
 
 ## Installation
@@ -69,6 +71,7 @@ npm run test-and-report
 ```
 
 This command will run the tests and generate an HTML report in the `reports` directory.
+This command uses concurrently to run the tests and generate the report at the same time.
 
 ## Project Structure
 

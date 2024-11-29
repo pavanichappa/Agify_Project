@@ -133,16 +133,44 @@ Then('the response should contain {string}', async function (ExpectedErrorMessag
     }
 });
 
-Given('I make a request to the Agify API with the name parameter containing a SQL injection payload {string}', async (sqlInjectionString: string) => {
-  const url = `${config.agifyApiUrl}?name=%27%20OR%201=1%20--`;
+Given('I make a request to the Agify API with the name parameter containing {string}', async (sqlInjectionString: string) => {
+  const url = `${config.agifyApiUrl}?name=${encodeURIComponent(sqlInjectionString)}`;
   const requestContext = await request.newContext();
    response = await requestContext.get(url); 
-  })
+  });
 
 Then('the response body should not expose any database error message', async () => {
   const responseBody = await response.json();
-   assert.ok(!responseBody.hasOwnProperty('error'), 'Expected no database error message in response');
-})
+  assert.ok(!/database|sql|syntax|error/i.test(JSON.stringify(responseBody)), 'Expected no database error message in response');
+});
 
+
+Then('the response body should not contain the injected script', async function () {
+  const responseBody = await response.json();
+  console.log('Response Body:', responseBody); // Log the response body for debugging
+  assert.ok(!responseBody.includes("<script>alert('XSS')</script>"), 'Injected script found in response body');
+});
+
+Then('the response body should not contain any sensitive or personal data', async function () {
+  const responseBody = await response.json();
+  console.log('Response Body:', responseBody); 
+  assert.ok(!/email|ip_address|ssn|social_security|password|credit_card|phone_number/i.test(JSON.stringify(responseBody)), 'Sensitive or personal data found in response body');
+});
+
+Given('I make a request to the Agify API without a valid API key', async function () {
+  const url = `${config.agifyApiUrl}?name=test`;
+  const requestContext = await request.newContext();
+  response = await requestContext.get(url, {
+    headers: {
+      'Authorization': 'InvalidAPIKey'
+    }
+  });
+});
+
+Then('the response body should contain a message indicating that authentication is required', async function () {
+  const responseBody = await response.json();
+  console.log('Response Body:', responseBody); // Log the response body for debugging
+  assert.ok(/authentication\s*required/i.test(JSON.stringify(responseBody)), 'Expected authentication required message not found in response');
+});
 
 
