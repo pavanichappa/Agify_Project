@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": "agify-api-testing;get-age-for-the-name---positive-scenarios",
+        "id": "agify-api-testing;get-age-for-the-name---input-first-name-only",
         "keyword": "Scenario Outline",
         "line": 11,
-        "name": "Get age for the name - positive Scenarios",
+        "name": "Get age for the name - input first name only",
         "steps": [
           {
             "arguments": [],
@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 454884199
+              "duration": 450261300
             }
           },
           {
@@ -31,35 +31,34 @@
               "location": "src\\test\\steps\\api.ts:23"
             },
             "result": {
-              "status": "failed",
-              "duration": 29848299,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
+              "status": "passed",
+              "duration": 305600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "the response should contain the field \"age\"",
+            "name": "the response should contain the field \"name\" with value \"alice\"",
             "match": {
               "location": "src\\test\\steps\\api.ts:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 22406199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "the age should be \"56\"",
+            "name": "the response should contain the field \"age\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:32"
+              "location": "src\\test\\steps\\api.ts:35"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2548999
             }
           }
         ],
@@ -68,22 +67,22 @@
       },
       {
         "description": "",
-        "id": "agify-api-testing;get-age-for-the-name---positive-scenarios",
+        "id": "agify-api-testing;get-age-for-the-name---input-first-name-only",
         "keyword": "Scenario Outline",
         "line": 12,
-        "name": "Get age for the name - positive Scenarios",
+        "name": "Get age for the name - input first name only",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I send a GET request to agify API for name \"BOB\"",
+            "name": "I send a GET request to agify API for name \"Jonh\"",
             "match": {
               "location": "src\\test\\steps\\api.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 96534599
+              "duration": 94152799
             }
           },
           {
@@ -95,35 +94,34 @@
               "location": "src\\test\\steps\\api.ts:23"
             },
             "result": {
-              "status": "failed",
-              "duration": 2065999,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
+              "status": "passed",
+              "duration": 233300
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "the response should contain the field \"age\"",
+            "name": "the response should contain the field \"name\" with value \"Jonh\"",
             "match": {
               "location": "src\\test\\steps\\api.ts:27"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3838599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "the age should be \"70\"",
+            "name": "the response should contain the field \"age\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:32"
+              "location": "src\\test\\steps\\api.ts:35"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1892700
             }
           }
         ],
@@ -132,190 +130,124 @@
       },
       {
         "description": "",
-        "id": "agify-api-testing;get-age-for-the-name---positive-scenarios",
+        "id": "agify-api-testing;get-age-for-the-name---input-full-name",
         "keyword": "Scenario Outline",
-        "line": 13,
-        "name": "Get age for the name - positive Scenarios",
+        "line": 22,
+        "name": "Get age for the name - input full name",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 15,
+            "name": "I send a GET request to agify API for name \"Pavani Chappa\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99518799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the response should contain the field \"name\" with value \"Pavani Chappa\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3756399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4365099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---input-full-name",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Get age for the name - input full name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
             "name": "I send a GET request to agify API for name \"Jonh Doe  Alexander\"",
             "match": {
               "location": "src\\test\\steps\\api.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 103935599
+              "duration": 102023699
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
+            "line": 16,
             "name": "the response status is 200",
             "match": {
               "location": "src\\test\\steps\\api.ts:23"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 2043400,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "the response should contain the field \"age\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:27"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the age should be \"55\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:32"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "agify-api-testing;get-age-for-the-name---positive-scenarios",
-        "keyword": "Scenario Outline",
-        "line": 14,
-        "name": "Get age for the name - positive Scenarios",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I send a GET request to agify API for name \"g\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 89588299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "the response status is 200",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:23"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 953599,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
+              "duration": 314200
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "the response should contain the field \"age\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:27"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the age should be \"64\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:32"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "agify-api-testing;get-age-for-the-name---negative-scenarios",
-        "keyword": "Scenario Outline",
-        "line": 24,
-        "name": "Get age for the name - negative Scenarios",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
             "line": 17,
-            "name": "I send a GET request to agify API for name \"13243245\"",
+            "name": "the response should contain the field \"name\" with value \"Jonh Doe  Alexander\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:15"
+              "location": "src\\test\\steps\\api.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 87371699
+              "duration": 4794800
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "And ",
             "line": 18,
-            "name": "the response status is 200",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:23"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 2631199,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
             "name": "the response should contain the field \"age\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:27"
+              "location": "src\\test\\steps\\api.ts:35"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "the age should be \"null\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:32"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3662899
             }
           }
         ],
@@ -324,45 +256,171 @@
       },
       {
         "description": "",
-        "id": "agify-api-testing;get-age-for-the-name---negative-scenarios",
+        "id": "agify-api-testing;get-age-for-the-name---input-name-with-diacritics",
         "keyword": "Scenario Outline",
-        "line": 25,
-        "name": "Get age for the name - negative Scenarios",
+        "line": 33,
+        "name": "Get age for the name - input name with diacritics",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 17,
+            "line": 26,
+            "name": "I send a GET request to agify API for name \"José\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90426899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the response should contain the field \"name\" with value \"José\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4506000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2602899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---input-name-with-diacritics",
+        "keyword": "Scenario Outline",
+        "line": 34,
+        "name": "Get age for the name - input name with diacritics",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I send a GET request to agify API for name \"María André\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99298899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the response should contain the field \"name\" with value \"María André\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2537899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the response should contain the field \"age\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2302699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agify-api-testing;get-age-for-the-name---input-invalid-name-parameter",
+        "keyword": "Scenario Outline",
+        "line": 44,
+        "name": "Get age for the name - input invalid name parameter",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
             "name": "I send a GET request to agify API for name \"\"",
             "match": {
               "location": "src\\test\\steps\\api.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 92144800
+              "duration": 86802599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
-            "name": "the response status is 200",
+            "line": 38,
+            "name": "the response status is 422",
             "match": {
               "location": "src\\test\\steps\\api.ts:23"
             },
             "result": {
               "status": "failed",
-              "duration": 1977399,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
+              "duration": 1881600,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n200 !== 422\n\n    + expected - actual\n\n    -200\n    +422\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "the response should contain the field \"age\"",
+            "line": 39,
+            "name": "the response should contain the field \"error\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:27"
+              "location": "src\\test\\steps\\api.ts:35"
             },
             "result": {
               "status": "skipped",
@@ -372,10 +430,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
-            "name": "the age should be \"null\"",
+            "line": 40,
+            "name": "the error message should contain \"Invalid 'name' parameter\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:32"
+              "location": "src\\test\\steps\\api.ts:63"
             },
             "result": {
               "status": "skipped",
@@ -388,45 +446,45 @@
       },
       {
         "description": "",
-        "id": "agify-api-testing;get-age-for-the-name---negative-scenarios",
+        "id": "agify-api-testing;get-age-for-the-name---input-invalid-name-parameter",
         "keyword": "Scenario Outline",
-        "line": 26,
-        "name": "Get age for the name - negative Scenarios",
+        "line": 45,
+        "name": "Get age for the name - input invalid name parameter",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 17,
-            "name": "I send a GET request to agify API for name \"frankjhgjgjhkjguyhfygfdgfchfuygjbvjhfthfgchgvhjyujgkjgfuthfhg\"",
+            "line": 37,
+            "name": "I send a GET request to agify API for name \"123\"",
             "match": {
               "location": "src\\test\\steps\\api.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 89375500
+              "duration": 99238599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
-            "name": "the response status is 200",
+            "line": 38,
+            "name": "the response status is 422",
             "match": {
               "location": "src\\test\\steps\\api.ts:23"
             },
             "result": {
               "status": "failed",
-              "duration": 1696300,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
+              "duration": 591799,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n200 !== 422\n\n    + expected - actual\n\n    -200\n    +422\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "the response should contain the field \"age\"",
+            "line": 39,
+            "name": "the response should contain the field \"error\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:27"
+              "location": "src\\test\\steps\\api.ts:35"
             },
             "result": {
               "status": "skipped",
@@ -436,74 +494,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
-            "name": "the age should be \"null\"",
+            "line": 40,
+            "name": "the error message should contain \"Invalid 'name' parameter\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:32"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "agify-api-testing;get-age-for-the-name---negative-scenarios",
-        "keyword": "Scenario Outline",
-        "line": 27,
-        "name": "Get age for the name - negative Scenarios",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "I send a GET request to agify API for name \"@!$%^\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 91935400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "the response status is 200",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:23"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 1344799,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 200\n\n    + expected - actual\n\n    -429\n    +200\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "the response should contain the field \"age\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:27"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "the age should be \"null\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:32"
+              "location": "src\\test\\steps\\api.ts:63"
             },
             "result": {
               "status": "skipped",
@@ -518,46 +512,59 @@
         "description": "",
         "id": "agify-api-testing;missing-name-parameter",
         "keyword": "Scenario",
-        "line": 29,
+        "line": 47,
         "name": "Missing Name Parameter",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 30,
+            "line": 48,
             "name": "I send a GET request to agify API with no name parameter",
             "match": {
-              "location": "src\\test\\steps\\api.ts:37"
+              "location": "src\\test\\steps\\api.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 89689999
+              "duration": 88936600
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 31,
+            "line": 49,
             "name": "the response status is 422",
             "match": {
               "location": "src\\test\\steps\\api.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 240499
+              "duration": 85799
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 32,
+            "line": 50,
             "name": "the response should contain the field \"error\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:27"
+              "location": "src\\test\\steps\\api.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 20067000
+              "duration": 2056999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "the error message should contain \"Missing 'name' parameter\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2951000
             }
           }
         ],
@@ -566,133 +573,61 @@
       },
       {
         "description": "",
-        "id": "agify-api-testing;security-test---sql-injection",
+        "id": "agify-api-testing;unsupported-http-method",
         "keyword": "Scenario",
-        "line": 55,
-        "name": "Security Test - SQL Injection",
+        "line": 53,
+        "name": "Unsupported HTTP Method",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 54,
+            "name": "I send a POST request to agify API for name \"alice\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86111799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 55,
+            "name": "the response status is 405",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1711200,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n404 !== 405\n\n    + expected - actual\n\n    -404\n    +405\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:24:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
             "line": 56,
-            "name": "I make a request to the Agify API with the name parameter containing \"' OR 1=1 --\"",
+            "name": "the response should contain the field \"error\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:136"
+              "location": "src\\test\\steps\\api.ts:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 91327999
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 57,
-            "name": "the response status code should be 400",
+            "name": "the error message should contain \"Method Not Allowed\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:119"
+              "location": "src\\test\\steps\\api.ts:63"
             },
             "result": {
-              "status": "passed",
-              "duration": 462300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 58,
-            "name": "the response body should not expose any database error message",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:142"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 3500500,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected no database error message in response\n    + expected - actual\n\n    -false\n    +true\n\n    at C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:144:10\n    at fulfilled (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:38:58)"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "agify-api-testing;security-test---cross-site-scripting-(xss)",
-        "keyword": "Scenario",
-        "line": 60,
-        "name": "Security Test - Cross-Site Scripting (XSS)",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 62,
-            "name": "I make a request to the Agify API with the name parameter containing \"<script>alert('XSS')</script>\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:136"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 87829300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 63,
-            "name": "the response status code should be 200",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:119"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 97999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 64,
-            "name": "the response body should not contain the injected script",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:148"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 4170000,
-              "error_message": "TypeError: responseBody.includes is not a function\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:151:27)\n    at fulfilled (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:38:58)"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "agify-api-testing;security-test---sensitive-data-exposure",
-        "keyword": "Scenario",
-        "line": 66,
-        "name": "Security Test - Sensitive Data Exposure",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 68,
-            "name": "I send a GET request to agify API for name \"John\"",
-            "match": {
-              "location": "src\\test\\steps\\api.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 85651399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 69,
-            "name": "the response body should not contain any sensitive or personal data (e.g., email, IP address, etc.)",
-            "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           }
@@ -702,49 +637,111 @@
       },
       {
         "description": "",
-        "id": "agify-api-testing;security-test---authentication-and-authorization",
+        "id": "agify-api-testing;security-test---invalid-api-key",
         "keyword": "Scenario",
-        "line": 71,
-        "name": "Security Test - Authentication and Authorization",
+        "line": 76,
+        "name": "Security Test - Invalid API Key",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 73,
+            "line": 77,
             "name": "I make a request to the Agify API without a valid API key",
             "match": {
-              "location": "src\\test\\steps\\api.ts:160"
+              "location": "src\\test\\steps\\api.ts:87"
             },
             "result": {
               "status": "passed",
-              "duration": 87462400
+              "duration": 90940399
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 74,
+            "line": 78,
             "name": "the response status code should be 401",
             "match": {
-              "location": "src\\test\\steps\\api.ts:119"
+              "location": "src\\test\\steps\\api.ts:50"
             },
             "result": {
               "status": "passed",
-              "duration": 181700
+              "duration": 316400
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 75,
-            "name": "the response body should contain a message indicating that authentication is required",
+            "line": 79,
+            "name": "the response should contain the field \"error\"",
             "match": {
-              "location": "src\\test\\steps\\api.ts:170"
+              "location": "src\\test\\steps\\api.ts:35"
             },
             "result": {
-              "status": "failed",
-              "duration": 6485200,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected authentication required message not found in response\n    + expected - actual\n\n    -false\n    +true\n\n    at World.<anonymous> (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:173:10)\n    at fulfilled (C:\\Users\\pavan\\Agify_Project\\src\\test\\steps\\api.ts:38:58)"
+              "status": "passed",
+              "duration": 7089800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 80,
+            "name": "the error message should contain \"Invalid API key\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3364400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "  /*For the sake of this test, we are setting the threshold to 1000 milliseconds. \n    There are no strict rules for this threshold in API specifications.*/",
+        "id": "agify-api-testing;performance-test-response-time-for-single-request",
+        "keyword": "Scenario",
+        "line": 82,
+        "name": "Performance Test-Response Time for Single Request",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 86,
+            "name": "I send a GET request to agify API for name \"alice\"",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90997000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 87,
+            "name": "the response status is 200",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 88,
+            "name": "the response time should be less than 1000 milliseconds",
+            "match": {
+              "location": "src\\test\\steps\\api.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 265600
             }
           }
         ],

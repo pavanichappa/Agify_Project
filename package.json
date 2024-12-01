@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cucumber-js test",
     "generate-report": "node generateReport.js",
-    "test-and-report":  "concurrently \"npm run test\" \"npm run generate-report\""
+    "test-and-report": "concurrently \"npm run test\" \"npm run generate-report\"",
+    "test-scenario": "cucumber-js test --name"
   },
   "keywords": [],
   "author": "",
