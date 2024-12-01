@@ -75,7 +75,7 @@
 
   Scenario: Performance Test-Response Time for Single Request
   /*For the sake of this test, we are setting the threshold to 1000 milliseconds. 
-    There are no strict rules for this threshold in API specifications. */
+    There are no strict rules for this threshold in API specifications.*/
 
     Given I send a GET request to agify API for name "alice"
     When the response status is 200
