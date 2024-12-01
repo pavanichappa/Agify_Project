@@ -81,9 +81,9 @@
     When the response status is 200
     Then the response time should be less than 1000 milliseconds
 
-  #    Scenario: Exceeding Rate Limit
-  # #The API is rate-limited to 100 requests per day. It will return a 429 status code if the limit is exceeded.
-  #   Given I make 101 requests to the Agify API in a day
-  #   Then the response status is 429
-  #   And the response should contain the field "error"
-  #   And the error message should contain "Request limit reached"
+  Scenario: Exceeding Rate Limit
+  #The API is rate-limited to 100 requests per day. It will return a 429 status code if the limit is exceeded.
+    Given I make 101 requests to the Agify API in a day
+    Then the response status is 429
+    And the response should contain the field "error"
+    And the error message should contain "Request limit reached"
