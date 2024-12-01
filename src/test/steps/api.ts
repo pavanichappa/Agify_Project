@@ -51,7 +51,7 @@ Then('the response status code should be {int}', (expectedStatuscode: number) =>
   for (const response of responses) {
     assert.strictEqual(response.status(), expectedStatuscode);
   }
-});
+}); 
 
 Then('the response should contain {string}', async function (ExpectedErrorMessage:string) {
   for (const response of responses) {
@@ -74,6 +74,7 @@ Given('I make a request to the Agify API with the name parameter containing {str
 
 Then('the response body should not expose any database error message', async () => {
   const responseBody = await response.json();
+  console.log('Response Body:', responseBody);
   assert.ok(!/database|sql|syntax|error/i.test(JSON.stringify(responseBody)), 'Expected no database error message in response');
 });
 
@@ -100,20 +101,15 @@ Given('I send a POST request to agify API for name {string}', async(name: string
   response = await requestContext.post(url); 
 })
 
-Given('I make 101 requests concurrently to the Agify API in a day', { timeout: 60000 }, async function () {
+Given('I make 101 requests to the Agify API in a day', { timeout: 60000 }, async function () {
   const names = ['alice', 'bob', 'charlie', 'david', 'eve', 'frank', 'grace', 'heidi', 'ivan', 'judy'];
   const requestContext = await request.newContext();
 
-  const requests = [];
   for (let i = 0; i < 101; i++) {
     const name = names[i % names.length];
     const url = `${config.agifyApiUrl}?name=${name}`;
-    const requestPromise = requestContext.get(url).then(response => {
-      responses.push(response);
-    });
-    requests.push(requestPromise);
+    response = await requestContext.get(url);
+    responses.push(response);
   }
-
-  await Promise.all(requests);
 });
 

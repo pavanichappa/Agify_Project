@@ -1,6 +1,8 @@
 # Agify API Testing Project
 
-This project contains automated tests for the Agify API using Cucumber, Playwright, and TypeScript. The tests cover various scenarios including functional tests, load tests, and security tests.
+This repository contains an automation framework built using Cucumber, TypeScript, and Playwright for testing the Agify.io API. The framework is designed to ensure that the API functions as expected when provided a name and returns an estimated age.
+In addition to functional tests, this repository also covers scenarios  for Rate Limit, Security and Performance tests.
+
 
 ## Table of Contents
 
@@ -11,6 +13,7 @@ This project contains automated tests for the Agify API using Cucumber, Playwrig
 - [Running Tests and Generating Reports Concurrently](#running-tests-and-generating-reports-concurrently)
 - [GitHub Actions Workflow](#github-actions-workflow)
 - [Project Structure](#project-structure)
+- [Explanation](#explanation)
 
 
 ## Prerequisites
