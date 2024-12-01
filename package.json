@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test",
+    "test": "cucumber-js",
     "generate-report": "node generateReport.js",
     "test-and-report": "concurrently \"npm run test\" \"npm run generate-report\"",
-    "test-scenario": "cucumber-js test --name"
+    "test-scenario": "cucumber-js --name"
   },
   "keywords": [],
   "author": "",
